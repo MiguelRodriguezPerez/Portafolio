@@ -14,9 +14,10 @@
     outline: none;
 }
 
-h1,p {
-  width: fit-content;
+h1,p, ul, li {
   margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 #root > *{

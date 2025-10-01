@@ -1,4 +1,4 @@
-import { TitleContainer } from "../components";
+import { TitleContainer } from "../components/title";
 
 export const MainPage = () => {
 

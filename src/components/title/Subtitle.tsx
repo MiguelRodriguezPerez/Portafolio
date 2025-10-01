@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-import styles from '../styles/title.module.css'
+import styles from '../../styles/title.module.css'
 
 export const Subtitle = () => {
 
