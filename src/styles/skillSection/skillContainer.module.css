@@ -1,3 +1,11 @@
 .skill-container {
     margin-top: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.skill-container > :first-child {
+    grid-column:  1/4;
 }
