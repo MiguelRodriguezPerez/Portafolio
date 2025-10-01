@@ -1,6 +1,6 @@
 import { Title, Subtitle, ContactList, Description } from './';
 
-import styles from '../../styles/title.module.css';
+import styles from '../../styles/title/title.module.css';
 
 
 export const TitleContainer = () => {
