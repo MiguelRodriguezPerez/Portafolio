@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import styles from '../../styles/title.module.css'
+import styles from '../../styles/title/title.module.css';
 
 export const Title = () => {
   

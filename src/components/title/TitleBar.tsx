@@ -1,6 +1,6 @@
 import { DiCode } from "react-icons/di";
 
-import styles from '../../styles/title.module.css';
+import styles from '../../styles/title/contact.module.css';
 
 export const TitleBar = () => {
   

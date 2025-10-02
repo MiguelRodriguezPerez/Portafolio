@@ -14,15 +14,16 @@
     outline: none;
 }
 
-h1,p, ul, li {
+h1, h2, h3 ,p, ul, li {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  font-weight: normal;
 }
 
 #root > *{
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-left: 13vw;
+  margin-right: 13vw;
 }
 
 @media screen and (max-width: 1400px) {
