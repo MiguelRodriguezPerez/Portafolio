@@ -2,6 +2,7 @@ import clsx from "clsx";
 import type { contactInterface } from "../../interfaces";
 
 import styles from '../../styles/title/contact.module.css';
+import svgStyle from '../../styles/shared/svgDiv.module.css';
 
 export const ContactButton = ({ contactData }: { contactData: contactInterface }) => {
 
@@ -15,7 +16,7 @@ export const ContactButton = ({ contactData }: { contactData: contactInterface }
         <li onClick={clickEvent} className={clsx(
             styles['contact-li']
         )}>
-            <div className={styles['svg-container']}>
+            <div className={svgStyle['svg-container']}>
                 <Icon size={24} />
             </div>
             <span>{contactData.name}</span>

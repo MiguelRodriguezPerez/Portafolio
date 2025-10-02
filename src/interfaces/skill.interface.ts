@@ -1,5 +1,5 @@
 import type { IconType } from "react-icons";
-import { FaReact, FaHtml5, FaCss3, FaJava, FaGit, FaGithub, FaDocker } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaJava, FaGitAlt, FaGithub, FaDocker } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { SiSpring, SiMysql } from "react-icons/si";
 
@@ -49,7 +49,7 @@ export const backendSkills: SkillInterface[] = [
 export const devopsSkills: SkillInterface[] = [
     {
         name: 'Git',
-        icon: FaGit
+        icon: FaGitAlt
     },
     {
         name: 'Github',
