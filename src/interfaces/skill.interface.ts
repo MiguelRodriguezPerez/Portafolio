@@ -2,6 +2,7 @@ import type { IconType } from "react-icons";
 import { FaReact, FaHtml5, FaCss3, FaJava, FaGitAlt, FaGithub, FaDocker } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { SiSpring, SiMysql } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
 
 export interface SkillInterface {
     name: string,
@@ -42,7 +43,7 @@ export const backendSkills: SkillInterface[] = [
     },
     {
         name: 'MySql',
-        icon: SiMysql
+        icon: GrMysql
     }
 ]
 
