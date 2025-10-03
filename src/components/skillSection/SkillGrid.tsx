@@ -10,7 +10,7 @@ export const SkillGrid = ({ title, arrSkill } : { title: string, arrSkill: Skill
             <h3 className={styles['skill-section-title']}>{ title }</h3>
             <ul className={ styles['skill-list']}>
                 {
-                    arrSkill.map(skill => <SkillCard skill={skill}/>)
+                    arrSkill.map(skill => <SkillCard skill={skill} key={skill.name}/>)
                 }
             </ul>
         </div>
