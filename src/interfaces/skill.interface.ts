@@ -53,10 +53,6 @@ export const devopsSkills: SkillInterface[] = [
         icon: FaGitAlt
     },
     {
-        name: 'Github',
-        icon: FaGithub
-    },
-    {
         name: 'Docker',
         icon: FaDocker
     }
