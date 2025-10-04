@@ -1,0 +1,64 @@
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px 0px;
+    margin: 20px 0px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 8px;
+    background-color: #49465b;
+    overflow: hidden;
+    gap: 0px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px; 
+  display: block;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+}
+
+.project-card-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 0px;
+    padding: 10px 20px 20px;
+}
+
+.project-card:hover {
+    background-color: #57536e;
+    transform: scale(1.04);
+}
+
+.project-stack-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+    margin-top: 10px;
+}
+
+.project-stack-card {
+    border: solid 1px white;
+    border-radius: 16px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.project-deployment-note > p {
+    text-align: center;
+    font-style: italic;
+}

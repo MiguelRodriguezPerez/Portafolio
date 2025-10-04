@@ -1,5 +1,4 @@
 .contact-list-container {
-    margin-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 0px 15px;
@@ -10,22 +9,16 @@
     align-content: center;
     justify-content: center;
 
-    gap: 35px;
-    border-radius: 8px;
-    border: solid 1px white;
+    gap: 10px;
     padding: 10px;
-
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+}
+
+.contact-li:first-child {
+    padding-left: 0px;
 }
 
 .contact-li > span {
-    font-size: 1.1rem;
-}
-
-.contact-li:hover {
-    box-shadow: 0px 2px 23px -3px rgba(207, 205, 205, 0.75);
-    -webkit-box-shadow: 0px 2px 23px -3px rgba(207, 205, 205, 0.75);
-    -moz-box-shadow: 0px 2px 23px -3px rgba(207, 205, 205, 0.75);
+    font-size: 1.2rem;
 }
 
