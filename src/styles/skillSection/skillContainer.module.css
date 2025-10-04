@@ -1,0 +1,45 @@
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+
+.skill-container > :first-child {
+    grid-column:  1/4;
+    margin-bottom: 10px;
+}
+
+.skill-section-title {
+    text-align: center;
+    font-size: 1.4rem;
+
+    margin: 0 0% 15px;
+    border-bottom: solid 1px white;
+    padding-bottom: 10px;
+}
+
+.skill-div {
+    padding: 15px 20px 20px;
+    border-radius: 8px;
+    border: solid 1px white;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+
+    gap: 15px 0px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-card > span {
+    font-size: 1.2rem;
+}
