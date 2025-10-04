@@ -17,7 +17,7 @@ export const ContactButton = ({ contactData }: { contactData: contactInterface }
             styles['contact-li']
         )}>
             <div className={svgStyle['svg-container']}>
-                <Icon size={24} />
+                <Icon size={26} />
             </div>
             <span>{contactData.name}</span>
         </li>
