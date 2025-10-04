@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 8px;
-    background-color: #383549;
+    background-color: #49465b;
     overflow: hidden;
     gap: 0px;
     cursor: pointer;
@@ -40,7 +40,7 @@
 }
 
 .project-card:hover {
-    background-color: #3B384D;
+    background-color: #57536e;
     transform: scale(1.04);
 }
 
