@@ -1,29 +1,45 @@
 @font-face {
-  font-family: "PortafolioFont";
+  font-family: "Lato-Regular";
   font-display: auto;
   src: url('./fonts/lato/Lato-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Lato-Bold";
+  font-display: auto;
+  src: url('./fonts/lato/Lato-Bold.ttf') format('truetype');
+}
+
 * {
-    font-family: "PortafolioFont";
+    font-family: "Lato-Regular";
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
-    background-color: #292940;
     color: rgb(244, 241, 241);
     outline: none;
 }
 
-h1, h2, h3 ,p, ul, li {
+h1, h2, h3 ,p, ul, li, body {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
   font-weight: normal;
 }
 
+#root {
+  background-color: #292940;
+  padding: 0px;
+}
+
 #root > *{
   margin-left: 13vw;
   margin-right: 13vw;
+}
+
+#root > main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
 }
 
 @media screen and (max-width: 1400px) {
