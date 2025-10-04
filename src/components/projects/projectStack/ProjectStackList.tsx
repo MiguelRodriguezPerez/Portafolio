@@ -7,7 +7,7 @@ export const ProjectStackList = ({ arrStack } : { arrStack: string[] }) => {
     return (
         <ul className={ styles['project-stack-list'] }>
             {
-                arrStack.map(stackTool => <ProjectStackCard stackTool={ stackTool } />)
+                arrStack.map(stackTool => <ProjectStackCard stackTool={ stackTool } key={ stackTool } />)
             }
         </ul>
     );
