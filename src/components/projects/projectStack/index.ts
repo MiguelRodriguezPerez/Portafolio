@@ -1,2 +1,3 @@
+export * from './ProjectRepoButton';
 export * from './ProjectStackCard';
-export * from './ProjectStackList';
+export * from './ProjectStackWrapper';
