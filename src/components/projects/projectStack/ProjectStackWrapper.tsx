@@ -1,18 +1,14 @@
-import { ProjectStackCard } from "./ProjectStackCard";
-
-import styles from '../../../styles/projectSection/projectStyles.module.css'
 import type { ProjectInterface } from "../../../interfaces/projects";
-import { ProjectRepoButton } from "./ProjectRepoButton";
+import { ProjectRepos, ProjectStackTagList } from "./";
+
+import styles from '../../../styles/projectSection/projectStyles.module.css';
 
 export const ProjectStackWrapper = ({ project }: { project: ProjectInterface }) => {
 
     return (
-        <ul className={styles['project-stack-list']}>
-            {
-                project.stackTags.map(stackTag => <ProjectStackCard stackTool={ stackTag } key={ stackTag } />)
-            }
-            <ProjectRepoButton repoLink={ project.frontendRepo } key={ `${project.name}_${project.frontendRepo.name}` } />
-            <ProjectRepoButton repoLink={ project.backendRepo } key={ `${project.name}_${project.backendRepo.name}`}/>
-        </ul>
+        <section className={styles['project-stack-section']}>
+            <ProjectStackTagList stackTags={ project.stackTags }/>
+            <ProjectRepos project={ project } />
+        </section>
     );
 }

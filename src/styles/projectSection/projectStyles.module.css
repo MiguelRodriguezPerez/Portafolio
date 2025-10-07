@@ -43,27 +43,39 @@
     transform: scale(1.04);
 }
 
-.project-stack-list {
+.project-stack-section {
+    margin-top: 15px;
+
     display: flex;
     flex-direction: row;
-    gap: 0px 8px;
-    margin-top: 10px;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 10px 0px;
 }
 
-.project-stack-card, .project-repo {
+.project-stack-tag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-stack-tag {
     background-color: transparent;
     border: solid 1px white;
     border-radius: 30px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.project-repo-container {
+    margin-left: auto;
 
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
-}
-
-.project-stack-card > span {
-    font-size: 0.9rem;
+    gap: 0px 10px;
 }
 
 .project-deployment-note > p {
@@ -72,23 +84,22 @@
 }
 
 .project-repo {
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
     padding: 10px;
+
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 30px;
     
+    height: fit-content;
     border-color: #34aeeb;
     -webkit-box-shadow: 0px 0px 7px 1px rgba(52,174,235,0.25); 
     box-shadow: 0px 0px 7px 1px rgba(52,174,235,0.25);
     cursor: pointer;
-}
-
-
-.project-repo:first-of-type {
-    margin-left: auto;
-}
-
-.project-repo:last-of-type {
-    margin-left: 4px;
-    margin-right: 0px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -96,6 +107,18 @@
     .project-list {
         grid-template-columns: 1fr;
         padding: 0px 60px 50px;
+    }
+
+    .project-stack-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: start; /* asegura que no colapsen filas */
+        gap: 15px 0px; 
+    }
+
+
+    .project-repo-container {
+        margin-left: 0px;
     }
     
 }
@@ -106,5 +129,12 @@
         grid-template-columns: 1fr;
         padding: 0px;
     }
-    
+
+    .project-repo-container {
+        gap: 10px;
+    }
+
+    .project-repo {
+        width: 100%;
+    }
 }
