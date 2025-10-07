@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px 0px;
-    margin: 20px 0px;
 }
 
 .project-list {
@@ -90,4 +89,22 @@
 .project-repo:last-of-type {
     margin-left: 4px;
     margin-right: 0px;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .project-list {
+        grid-template-columns: 1fr;
+        padding: 0px 60px 50px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    .project-list {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    
 }

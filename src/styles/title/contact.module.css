@@ -1,5 +1,4 @@
 .contact-list-container {
-    margin-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 0px 15px;
@@ -10,22 +9,31 @@
     align-content: center;
     justify-content: center;
 
-    gap: 35px;
-    border-radius: 8px;
-    border: solid 1px white;
+    gap: 10px;
     padding: 10px;
-
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+}
+
+.contact-li:first-child {
+    padding-left: 0px;
 }
 
 .contact-li > span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
-.contact-li:hover {
-    box-shadow: 0px 2px 23px -3px rgba(207, 205, 205, 0.75);
-    -webkit-box-shadow: 0px 2px 23px -3px rgba(207, 205, 205, 0.75);
-    -moz-box-shadow: 0px 2px 23px -3px rgba(207, 205, 205, 0.75);
-}
+@media screen and (max-width: 700px) {
+    
+    .contact-list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
 
+        justify-items: start;
+        align-items: start;
+    }
+
+    .contact-li,  .contact-li:first-child {
+        padding-left: 2px;
+    }
+}
