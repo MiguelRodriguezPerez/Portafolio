@@ -12,7 +12,7 @@ export const ProjectRepoButton = ({ repoLink } : { repoLink: RepoLink }) => {
     return (
         <button className={ styles['project-repo'] } onClick={ clickEvent }>
             <span>{ repoLink.name }</span>
-            <FaGithub size={20} color="#34aeeb"/>
+            <FaGithub size={23} color="#34aeeb"/>
         </button>
     );
 }
