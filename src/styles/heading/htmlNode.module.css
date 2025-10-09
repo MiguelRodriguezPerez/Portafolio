@@ -1,0 +1,53 @@
+.node-section {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.node-container {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin: 0px 0px auto auto;
+    background-color: white;
+
+    border-radius: 90px;
+}
+
+.node-container > svg {
+    margin: 0px auto;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 30px;
+
+    width: 130px;
+    height: 130px;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .node-container {
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .node-container > svg {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .node-container {
+        display: none;
+    }
+    
+}

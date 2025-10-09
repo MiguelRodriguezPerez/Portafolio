@@ -25,6 +25,8 @@
 @media screen and (max-width: 700px) {
     
     .contact-list-container {
+        margin-top: 15px;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0px;
