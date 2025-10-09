@@ -8,7 +8,7 @@ export const ProjectList = () => {
     return (
         <ul className={styles['project-list']}>
             {
-                arrProjects.map(project => <ProjectCard project={ project }/>)
+                arrProjects.map(project => <ProjectCard project={ project } key={ project.name }/>)
             }
         </ul>
     );

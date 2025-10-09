@@ -22,3 +22,18 @@
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 700px) {
+    
+    .contact-list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+
+        justify-items: start;
+        align-items: start;
+    }
+
+    .contact-li,  .contact-li:first-child {
+        padding-left: 2px;
+    }
+}

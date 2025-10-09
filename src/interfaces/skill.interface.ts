@@ -1,8 +1,8 @@
 import type { IconType } from "react-icons";
-import { FaReact, FaHtml5, FaCss3, FaJava, FaGitAlt, FaGithub, FaDocker } from "react-icons/fa";
-import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
-import { SiSpring, SiMysql } from "react-icons/si";
+import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import { FaCss3, FaDocker, FaGitAlt, FaGithub, FaHtml5, FaJava, FaReact } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
+import { SiSpring } from "react-icons/si";
 
 export interface SkillInterface {
     name: string,
@@ -51,10 +51,6 @@ export const devopsSkills: SkillInterface[] = [
     {
         name: 'Git',
         icon: FaGitAlt
-    },
-    {
-        name: 'Github',
-        icon: FaGithub
     },
     {
         name: 'Docker',

@@ -1,12 +1,12 @@
 .skill-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3%;
+    gap: 10px 0px;
+    margin: 15px 0px;
 }
 
 .skill-container > :first-child {
     grid-column:  1/4;
-    margin-bottom: 10px;
 }
 
 .skill-section-title {
@@ -19,9 +19,7 @@
 }
 
 .skill-div {
-    padding: 15px 20px 20px;
-    border-radius: 8px;
-    border: solid 1px white;
+    padding: 5px 20px 20px;
 }
 
 .skill-list {
@@ -30,6 +28,7 @@
     justify-items: start;
 
     gap: 15px 0px;
+    padding: 0px 10px;
 }
 
 .skill-card {
@@ -42,4 +41,28 @@
 
 .skill-card > span {
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    
+
+    .skill-container > :first-child {
+        margin-bottom: 10px;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-container > :first-child {
+        grid-column:  1/2;
+    }
 }
