@@ -1,0 +1,30 @@
+.heading-container {
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+
+.heading-container > *:nth-child(2) {
+    grid-row: 1/4;
+    grid-column: 2/4;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .heading-container {
+        grid-template-columns: 1fr 25%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    .heading-container {
+        grid-template-columns: 1fr;
+    }
+
+    .heading-container > *:nth-child(2) {
+        grid-row: initial;
+        grid-column: initial;
+    }
+
+}

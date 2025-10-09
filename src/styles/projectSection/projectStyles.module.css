@@ -81,6 +81,7 @@
 .project-deployment-note > p {
     text-align: center;
     font-style: italic;
+    margin-bottom: 30px;
 }
 
 .project-repo {

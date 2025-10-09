@@ -1,7 +1,7 @@
-import { contactList } from "../../interfaces";
+import { contactList } from "../../../interfaces";
 import { ContactButton } from "./ContactButton";
 
-import styles from '../../styles/title/contact.module.css';
+import styles from '../../../styles/heading/contact.module.css';
 
 export const ContactList = () => {
 
