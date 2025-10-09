@@ -18,7 +18,9 @@ const commonStack: string[] = ['React', 'Spring-Boot', 'MySql'];
 export const arrProjects: ProjectInterface[] = [
     {
         name: 'Workline',
-        description: 'Un zorro curioso caminaba lentamente bajo la luna brillante, mientras el viento suave movía las hojas secas y un búho observaba silencioso desde lo alto de un roble.',
+        description: 'Workline es un portal de empleo donde encontrar nuevas oportunidades laborales, ' +
+                     'ya sea encontrando tu trabajo o candidato ideal para tu empresa' +
+                     '.',
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/Workline-UI'
@@ -30,11 +32,12 @@ export const arrProjects: ProjectInterface[] = [
         stackTags: commonStack,
         screenshotProjectRoute: '../../../public/images/worklineCaptura.png',
         prodUrl: 'https://www.worklinejobs.com'
-        
     },
     {
         name: 'Weavile Team Builder',
-        description: 'Un zorro curioso caminaba lentamente bajo la luna brillante, mientras el viento suave movía las hojas secas y un búho observaba silencioso desde lo alto de un roble.',
+        description: 'Planea y diseña tu equipo pokemón ideal con esta aplicación. ' +
+                     'Además podrás analizar que tipos cubre cada pokemón ' +
+                     'para crear sinergias óptimas entre sus miembros',
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-FrontEnd'

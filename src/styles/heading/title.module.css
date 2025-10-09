@@ -7,7 +7,6 @@
 
 .title {
     font-size: 4rem;
-    margin-top: 15px;
 
     --animation-duration: 15s;
 }
@@ -33,11 +32,16 @@
     font-size: 1.2rem;
 }
 
+.description a {
+    font-size: 1.1rem;
+}
+
 .subtitle-container {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .subtitle-container > span {
