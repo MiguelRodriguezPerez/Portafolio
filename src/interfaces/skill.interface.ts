@@ -1,6 +1,6 @@
 import type { IconType } from "react-icons";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
-import { FaCss3, FaDocker, FaGitAlt, FaGithub, FaHtml5, FaJava, FaReact } from "react-icons/fa";
+import { FaCss3, FaDocker, FaGitAlt, FaHtml5, FaJava, FaReact } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiSpring } from "react-icons/si";
 

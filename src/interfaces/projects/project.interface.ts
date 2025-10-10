@@ -30,7 +30,7 @@ export const arrProjects: ProjectInterface[] = [
             link: 'https://github.com/MiguelRodriguezPerez/Workline-BackEnd'
         },
         stackTags: commonStack,
-        screenshotProjectRoute: '../../../public/images/worklineCaptura.png',
+        screenshotProjectRoute: '/images/worklineCaptura.png',
         prodUrl: 'https://www.worklinejobs.com'
     },
     {
@@ -47,7 +47,7 @@ export const arrProjects: ProjectInterface[] = [
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-BackEnd'
         },
         stackTags: commonStack,
-        screenshotProjectRoute: '../../../public/images/weavileCaptura.png',
+        screenshotProjectRoute: '/images/weavileCaptura.png',
         prodUrl: 'https://www.weavileteambuilder.com'
     },
 ];

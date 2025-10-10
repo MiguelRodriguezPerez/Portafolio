@@ -13,7 +13,7 @@ export const Description = () => {
                 Me gusta lo simple y sencillo, como las dependencias que resuelven problemas en pocos pasos
                 como 
                 {' '} <a href='https://zustand.docs.pmnd.rs/getting-started/introduction' target='_blank' rel="noopener noreferrer">Zustand</a>,
-                {' '} <a href='https://www.npmjs.com/package/clsx' target='_blank' rel="noopener noreferrer">Clsx</a> o
+                {' '} <a href='https://www.npmjs.com/package/clsx' target='_blank' rel="noopener noreferrer">Clsx</a>,
                 {' '}  <a href='https://www.baeldung.com/java-validation'target='_blank' rel="noopener noreferrer">las validaciones de Jakarta</a>
                 {' '}o el diseño de este portafolio.
             </p>
