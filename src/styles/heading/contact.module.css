@@ -14,8 +14,17 @@
     cursor: pointer;
 }
 
+.contact-li > span {
+    height: fit-content;
+    margin: auto 0;
+}
+
 .contact-li:first-child {
     padding-left: 0px;
+}
+
+.contact-li:last-child {
+    margin-left: auto;
 }
 
 .contact-li > span {

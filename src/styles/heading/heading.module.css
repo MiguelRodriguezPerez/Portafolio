@@ -5,8 +5,13 @@
 }
 
 .heading-container > *:nth-child(2) {
-    grid-row: 1/4;
-    grid-column: 2/4;
+  grid-column: 2; 
+  grid-row: span 3; 
+  align-self: start; 
+}
+
+.heading-container > *:last-child {
+  grid-column: 1 / -1; 
 }
 
 @media screen and (max-width: 1400px) {
