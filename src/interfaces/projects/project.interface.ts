@@ -30,14 +30,13 @@ export const arrProjects: ProjectInterface[] = [
             link: 'https://github.com/MiguelRodriguezPerez/Workline-BackEnd'
         },
         stackTags: commonStack,
-        screenshotProjectRoute: '../../../public/images/worklineCaptura.png',
+        screenshotProjectRoute: '/images/worklineCaptura.png',
         prodUrl: 'https://www.worklinejobs.com'
     },
     {
         name: 'Weavile Team Builder',
-        description: 'Planea y diseña tu equipo pokemón ideal con esta aplicación. ' +
-                     'Además podrás analizar que tipos cubre cada pokemón ' +
-                     'para crear sinergias óptimas entre sus miembros',
+        description: "Planea y diseña tu equipo pokemón ideal con esta aplicación.\n" +
+             "Además podrás analizar las coberturas de tipos entre sus miembros",
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-FrontEnd'
@@ -47,7 +46,7 @@ export const arrProjects: ProjectInterface[] = [
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-BackEnd'
         },
         stackTags: commonStack,
-        screenshotProjectRoute: '../../../public/images/weavileCaptura.png',
+        screenshotProjectRoute: '/images/weavileCaptura.png',
         prodUrl: 'https://www.weavileteambuilder.com'
     },
 ];

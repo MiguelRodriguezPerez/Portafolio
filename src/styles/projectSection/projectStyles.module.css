@@ -38,6 +38,10 @@
     padding: 10px 20px 20px;
 }
 
+.project-card-div > p {
+    white-space: pre-line;
+}
+
 .project-card:hover {
     background-color: #57536e;
     transform: scale(1.04);
