@@ -35,9 +35,8 @@ export const arrProjects: ProjectInterface[] = [
     },
     {
         name: 'Weavile Team Builder',
-        description: 'Planea y diseña tu equipo pokemón ideal con esta aplicación. ' +
-                     'Además podrás analizar que tipos cubre cada pokemón ' +
-                     'para crear sinergias óptimas entre sus miembros',
+        description: "Planea y diseña tu equipo pokemón ideal con esta aplicación.\n" +
+             "Además podrás analizar las coberturas de tipos entre sus miembros",
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-FrontEnd'
