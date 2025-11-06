@@ -17,8 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
-    margin: 15px 0px;
+    margin-bottom: 10px;
 }
 
 .title-bar {
@@ -46,13 +45,6 @@
 
 .subtitle-container > span {
     font-size: 1.5rem;
-}
-
-.cv-button {
-    border: solid 1px whitesmoke;
-    border-radius: 8px;
-    background-color: transparent;
-    padding: 14px 25px;
 }
 
 

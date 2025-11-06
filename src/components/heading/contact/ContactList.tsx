@@ -7,11 +7,14 @@ import { DownloadCvButton } from "./DownloadCvButton";
 export const ContactList = () => {
 
     return (
-        <ul className={styles['contact-list-container']}>
-            {
-                contactList.map(contact => <ContactButton contactData={contact} key={contact.name} />)
-            }
+        <div className={styles['contact-list-container']}>
+            <ul className={styles['contact-list-socials']}>
+                {
+                    contactList.map(contact => <ContactButton contactData={contact} key={contact.name} />)
+                }
+            </ul>
             <DownloadCvButton/>
-        </ul>
+        </div>
+        
     );
 }

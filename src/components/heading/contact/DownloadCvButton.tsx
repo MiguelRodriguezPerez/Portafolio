@@ -1,13 +1,15 @@
-import styles from '../../../styles/heading/title.module.css';
-import liStyles from '../../../styles/heading/contact.module.css';
+import { FaFileAlt } from "react-icons/fa";
+
+import styles from '../../../styles/heading/contact.module.css';
 
 export const DownloadCvButton = () => {
   
     return (
-        <li className={liStyles['contact-li']}>
-            <button className={styles['cv-button']}>
-                Descargar CV
-            </button>
-        </li>
+        <div className={styles['cv-button-container']}>
+            <a className={styles['cv-button']} download='MiguelRodriguezCv.pdf' href='/files/MiguelRodriguezCv.pdf'>
+                <FaFileAlt size={18}/>
+                <span>Descargar CV</span>
+            </a>
+        </div>
     );    
 }
