@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import type { contactInterface } from "../../../interfaces";
 
-import styles from '../../../styles/heading/contact.module.css';
+import styles from '../../../styles/heading/contact.module.scss';
 import svgStyle from '../../../styles/shared/svgDiv.module.css';
 
 export const ContactButton = ({ contactData }: { contactData: contactInterface }) => {

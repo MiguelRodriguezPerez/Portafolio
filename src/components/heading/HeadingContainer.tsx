@@ -1,19 +1,17 @@
-import { ContactList } from './contact';
-import { Description, Subtitle, Title, TitleBar } from './title';
-import { HtmlNodeLogo } from './HtmlNodeLogo';
 
-import styles from '../../styles/heading/heading.module.css';
+
+import styles from '../../styles/heading/heading.module.scss';
+import { ContactList } from './contact';
+import { TitleBar } from './title';
+import { Titles } from './Titles';
 
 export const HeadingContainer = () => {
   
     return (
         <header className={ styles['heading-container'] }>
-            <Title/>
-            <HtmlNodeLogo/>
-            <Subtitle />
+            <Titles/>
             <TitleBar/>
-            <Description />
-            <ContactList />
+            <ContactList/>
         </header>
     );
 }

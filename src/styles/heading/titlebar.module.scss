@@ -1,0 +1,29 @@
+div.title-bar-div {
+    margin: 20px 0px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.title-bar {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.expand-line-animation{
+  width: 0;
+  height: 1px;
+  background: white;
+  border: none;
+  animation: expand 2s forwards ease-out;
+}
+
+@keyframes expand {
+  from { width: 0; }
+  to   { width: 100%; }
+}

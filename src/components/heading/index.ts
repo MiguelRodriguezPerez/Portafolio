@@ -1,3 +1,3 @@
 export * from './contact';
-export * from './title';
 export * from './HeadingContainer';
+export * from './title';

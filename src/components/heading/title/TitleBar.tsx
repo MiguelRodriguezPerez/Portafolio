@@ -1,16 +1,18 @@
 import { DiCode } from "react-icons/di";
-import { useWindowWidth } from "@react-hook/window-size";
 
-import styles from '../../../styles/heading/title.module.css';
+import styles from '../../../styles/heading/titlebar.module.scss';
+import clsx from "clsx";
 
 export const TitleBar = () => {
-
-    const width = useWindowWidth();
   
     return (
-         width < 700 && (
             <div className={styles["title-bar-div"]}>
-                <hr className={styles["title-bar"]} />
+                <hr
+                className={clsx(
+                    styles["title-bar"],
+                    styles["expand-line-animation"] // ← segunda clase
+                )}
+                />
                 <DiCode
                 size={60}
                 fill="black"
@@ -21,6 +23,6 @@ export const TitleBar = () => {
                 }}
                 />
             </div>
-        )
+
     );
 }
