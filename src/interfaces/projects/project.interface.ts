@@ -13,8 +13,6 @@ export interface RepoLink {
     link: string
 }
 
-const commonStack: string[] = ['React', 'Spring-Boot', 'MySql'];
-
 export const arrProjects: ProjectInterface[] = [
     {
         name: 'Workline',
@@ -23,13 +21,13 @@ export const arrProjects: ProjectInterface[] = [
                      '.',
         frontendRepo: {
             name: 'Front-End',
-            link: 'https://github.com/MiguelRodriguezPerez/Workline-UI'
+            link: 'https://github.com/MiguelRodriguezPerez/Workline-FrontEnd'
         },
         backendRepo: {
             name: 'Back-End',
             link: 'https://github.com/MiguelRodriguezPerez/Workline-BackEnd'
         },
-        stackTags: commonStack,
+        stackTags: ['React', 'Angular', 'MySql'],
         screenshotProjectRoute: '/images/worklineCaptura.png',
         prodUrl: 'https://www.worklinejobs.com'
     },
@@ -45,7 +43,7 @@ export const arrProjects: ProjectInterface[] = [
             name: 'Back-End',
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-BackEnd'
         },
-        stackTags: commonStack,
+        stackTags: ['React', 'Spring-Boot', 'MySql'],
         screenshotProjectRoute: '/images/weavileCaptura.png',
         prodUrl: 'https://www.weavileteambuilder.com'
     },
