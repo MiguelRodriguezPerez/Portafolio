@@ -27,7 +27,7 @@ export const arrProjects: ProjectInterface[] = [
             name: 'Back-End',
             link: 'https://github.com/MiguelRodriguezPerez/Workline-BackEnd'
         },
-        stackTags: ['React', 'Angular', 'MySql'],
+        stackTags: ['Angular', 'Spring-Boot', 'MySql'],
         screenshotProjectRoute: '/images/worklineCaptura.png',
         prodUrl: 'https://www.worklinejobs.com'
     },
