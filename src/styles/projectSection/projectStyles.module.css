@@ -51,13 +51,13 @@
     margin-top: 15px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    gap: 10px 0px;
+    gap: 15px 0px;
 }
 
-.project-stack-tag-list {
+.project-stack-tag-list,.project-repo-container  {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,15 +72,6 @@
     font-size: 0.9rem;
 }
 
-.project-repo-container {
-    margin-left: auto;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px 10px;
-}
 
 .project-deployment-note > p {
     text-align: center;

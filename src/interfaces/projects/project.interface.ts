@@ -27,14 +27,15 @@ export const arrProjects: ProjectInterface[] = [
             name: 'Back-End',
             link: 'https://github.com/MiguelRodriguezPerez/Workline-BackEnd'
         },
-        stackTags: ['Angular', 'Spring-Boot', 'MySql'],
+        stackTags: ['Angular', 'Spring-Boot', 'MySql', 'Sass'],
         screenshotProjectRoute: '/images/worklineCaptura.png',
         prodUrl: 'https://www.worklinejobs.com'
     },
     {
         name: 'Weavile Team Builder',
         description: "Planea y diseña tu equipo pokemón ideal con esta aplicación.\n" +
-             "Además podrás analizar las coberturas de tipos entre sus miembros",
+             "Además podrás analizar las coberturas ofensivas y defensias de sus miembros " +
+             "para asegurar tu victoria.",
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-FrontEnd'
@@ -43,7 +44,7 @@ export const arrProjects: ProjectInterface[] = [
             name: 'Back-End',
             link: 'https://github.com/MiguelRodriguezPerez/WeavileTeamBuilder-BackEnd'
         },
-        stackTags: ['React', 'Spring-Boot', 'MySql'],
+        stackTags: ['React', 'Spring-Boot', 'MySql','OpenAPI'],
         screenshotProjectRoute: '/images/weavileCaptura.png',
         prodUrl: 'https://www.weavileteambuilder.com'
     },
