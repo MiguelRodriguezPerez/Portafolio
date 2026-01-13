@@ -5,14 +5,14 @@ h1.heading-title {
     text-align: center;
     font-size: 4.8rem;
     margin-bottom: 10px;
-    animation: fadeUp 0.6s ease-out forwards;
+    animation: fadeUp 1.7s ease-out forwards;
 }
 
 h2.heading-subtitle {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 80px;
-    animation: fadeUp 0.6s ease-out forwards;
+    animation: fadeUp 1.7s ease-out forwards;
 }
 
 div.title-bar-div {
@@ -28,7 +28,7 @@ div.title-bar-div {
     width: 100%;
     margin-top: 20px;
     margin-bottom: -25px;
-    animation: wideUp 0.8s ease-out forwards;
+    animation: wideUp 1.7s ease-out forwards;
 }
 
 
@@ -58,7 +58,7 @@ div.title-bar-div {
     }
 
     h2.heading-subtitle {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     div.title-bar-div {
