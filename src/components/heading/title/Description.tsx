@@ -1,15 +1,15 @@
-import styles from '../../../styles/heading/title.module.css';
+
 
 export const Description = () => {
 
     return (
         <div>
-            <p className={ styles.description }>
+            <p>
                 ¡Hola! Soy Miguel, un joven programador al que le encanta desarrollar software
                 y aprender resolviendo problemas, así como trabajar con herramientas
                 que hagan el desarrollo más fácil.
             </p>
-            <p className={ styles.description }>
+            <p>
                 Me gusta lo simple y sencillo, como las dependencias que resuelven problemas en pocos pasos
                 como 
                 {' '} <a href='https://zustand.docs.pmnd.rs/getting-started/introduction' target='_blank' rel="noopener noreferrer">Zustand</a>,

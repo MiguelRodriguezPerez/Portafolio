@@ -1,17 +1,12 @@
-div.contact-list-container {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin: 10px 0px;
-}
-
-.contact-list-socials {
+ul.contact-list-socials {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0px 15px;
+    margin-bottom: 15px;
 }
 
-.contact-li {
+li.contact-li {
     display: flex;
     align-content: end;
     justify-content: center;
@@ -23,19 +18,15 @@ div.contact-list-container {
     cursor: pointer;
 }
 
-.contact-li > span {
+li.contact-li > span {
     height: fit-content;
     margin: auto 0;
-}
-
-
-.contact-li > span {
     font-size: 1.2rem;
 }
 
+
 a.cv-button {
     width: fit-content;
-    margin-left: auto;
 
     border: solid 1px whitesmoke;
     border-radius: 8px;
@@ -63,19 +54,6 @@ a.cv-button {
 }
 
 @media screen and (max-width: 700px) {
-
-    div.contact-list-container {
-        margin-top: 15px;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0px;
-
-        justify-items: start;
-        align-items: start;
-    }
-
-    
 
     a.cv-button {
         padding: 8px 18px;
