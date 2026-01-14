@@ -2,7 +2,6 @@ import { contactList } from "../../../interfaces";
 import { ContactButton } from "./ContactButton";
 
 import styles from '../../../styles/heading/contact.module.css';
-import { DownloadCvButton } from "./DownloadCvButton";
 
 export const ContactList = () => {
 
@@ -13,7 +12,6 @@ export const ContactList = () => {
                     contactList.map(contact => <ContactButton contactData={contact} key={contact.name} />)
                 }
             </ul>
-            <DownloadCvButton/>
         </div>
         
     );
