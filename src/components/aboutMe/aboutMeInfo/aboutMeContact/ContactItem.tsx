@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import type { contactInterface } from "../../../interfaces";
+import type { contactInterface } from "../../../../interfaces";
 
-import styles from '../../../styles/heading/contact.module.css';
-import svgStyle from '../../../styles/shared/svgDiv.module.css';
+import styles from '../../../../styles/aboutMe/contact.module.css';
+import svgStyle from '../../../../styles/shared/svgDiv.module.css';
 
-export const ContactButton = ({ contactData }: { contactData: contactInterface }) => {
+export const ContactItem = ({ contactData }: { contactData: contactInterface }) => {
 
     const Icon = contactData.icon
 

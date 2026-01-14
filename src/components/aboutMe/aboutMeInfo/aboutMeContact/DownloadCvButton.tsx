@@ -1,6 +1,6 @@
 import { FaFileAlt } from "react-icons/fa";
 
-import styles from '../../../styles/heading/contact.module.css';
+import styles from '../../../../styles/aboutMe/contact.module.css';
 
 export const DownloadCvButton = () => {
   
