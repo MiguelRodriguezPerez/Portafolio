@@ -1,4 +1,11 @@
 section.about-me-container {
+    margin-bottom: 40px;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 25% 1fr;
+    gap: 30px 5%;
+
+    >:first-child {
+        grid-column: 1/3;
+    }
 }

@@ -1,0 +1,13 @@
+div.aboutMePfpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+
+    > img {
+        display: block;
+        width: 230px;
+        margin: auto;
+    }
+}
