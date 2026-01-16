@@ -1,12 +1,11 @@
 import LZString from "lz-string";
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { makeFirstRequest } from '../api/BackendFirstRequest';
 import { DeviceType, type BrowserRegister } from '../interfaces/browserRegister.interface';
 
 export const useTrackUser = () => {
 
     const getDeviceType = (): DeviceType => {
-
         const width = window.innerWidth;
 
         switch (true) {
@@ -19,7 +18,7 @@ export const useTrackUser = () => {
     const generateAndSaveFirstRequest = (): BrowserRegister => {
 
         const firstRequest: BrowserRegister = {
-            id: 0,
+            id: null,
             dateTimeRequestFirstLoad: new Date(),
             deviceType: getDeviceType(),
             userClickedOnCvButton: false,
@@ -35,15 +34,25 @@ export const useTrackUser = () => {
             generateAndSaveFirstRequest()
         )
 
-        localStorage.setItem('userLoadedThisSite',
-            LZString.compressToUTF16(
+        cookieStore.set('userLoadedThisSite',
+            LZString.compressToBase64(
                 JSON.stringify(resultado.data)
             )
         );
     }
 
+    const hasFetched = useRef(false);
 
     useEffect(() => {
-        if (!localStorage.getItem('userLoadedThisSite')) userLoadedPageRequest();
+        /* Toda esta tontería por el StrictMode */
+        if (hasFetched.current) return;
+        hasFetched.current = true;
+
+        const getReqCookie = async() => {
+            const reqCookie = await cookieStore.get('userLoadedThisSite')
+            if (!reqCookie) await userLoadedPageRequest();
+        }
+
+        getReqCookie();
     },[])
 }
