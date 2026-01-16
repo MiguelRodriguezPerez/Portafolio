@@ -5,8 +5,10 @@ export enum DeviceType {
 }
 
 export interface BrowserRegister {
-  id: number;
-  horaRegistro: string;
+  id: number | null; // null en la primera request, en el back-end se autogenerará
+  dateTimeRequestFirstLoad: Date;
   deviceType: DeviceType;
   userClickedOnCvButton: boolean;
+  userClickedOnWeavile: boolean;
+  userClickedOnWorkline: boolean;
 }
