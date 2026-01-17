@@ -3,10 +3,6 @@ div.contact-list-container {
 
     display: flex;
     flex-direction: row;
-
-    & :last-child {
-        margin-left: auto;
-    }
 }
 
 ul.contact-list-socials {
@@ -35,6 +31,10 @@ li.contact-li > span {
     font-size: 1.2rem;
 }
 
+div.cv-button-container {
+    margin-left: auto;
+}
+
 
 a.cv-button {
     width: fit-content;
@@ -55,6 +55,7 @@ a.cv-button {
 
     a.cv-button {
         padding: 8px 18px;
+        margin-left: auto;
     }
 
     .contact-li > span {
@@ -68,11 +69,18 @@ a.cv-button {
 
     a.cv-button {
         padding: 8px 18px;
-        margin-top: 20px;
-        margin-left: auto;
+        margin-top: 0px;
     }
 
-    .contact-li,  .contact-li:first-child {
-        padding-left: 2px;
+    div.contact-list-container {
+        flex-direction: column;
+        align-content: flex-start;
     }
+
+    div.cv-button-container {
+        margin-left: 0px;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+
 }

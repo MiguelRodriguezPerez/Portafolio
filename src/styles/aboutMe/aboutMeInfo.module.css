@@ -19,3 +19,11 @@ div.aboutMeSubtitleContainer {
     gap: 10px;
     align-items: top;
 }
+
+@media screen and (max-width: 1400px) {
+    
+    div.aboutMeInfoContainer {
+        padding: 0px 15px;
+    }
+    
+}

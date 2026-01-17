@@ -1,4 +1,13 @@
-.heading-container {
+header.heading-container {
     display: flex;
     flex-direction: column;
+    padding: 0px 30px;
+}
+
+@media screen and (max-width: 700px) {
+    
+    header.heading-container { 
+        padding: 0px 20px;
+    }
+    
 }

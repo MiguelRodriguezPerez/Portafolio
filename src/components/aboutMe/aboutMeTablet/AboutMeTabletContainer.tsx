@@ -3,6 +3,7 @@ import { AboutMeDescription, ContactList } from '../aboutMeInfo';
 import { AboutMeTitlesTablet } from './AboutMeTitlesTablet';
 
 import styles from '../../../styles/aboutMe/aboutMeTabletContainer.module.css';
+import infoStyles from '../../../styles/aboutMe/aboutMeInfo.module.css';
 
 export const AboutMeTabletContainer = () => {
 
@@ -10,7 +11,7 @@ export const AboutMeTabletContainer = () => {
         <section className={styles['aboutMeTabletContainer']}>
             <SectionTitle title='Sobre mí' />
             <AboutMeTitlesTablet/>
-            <div>
+            <div className={infoStyles.aboutMeInfoContainer}>
                 <AboutMeDescription />
                 <ContactList />
             </div>
