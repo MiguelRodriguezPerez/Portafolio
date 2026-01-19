@@ -7,7 +7,7 @@ div.aboutMePfpContainer {
 
     > img {
         display: block;
-        width: 200px;
+        width: 140px;
         margin: auto;
     }
 }
@@ -23,7 +23,7 @@ div.aboutMePfpContainer {
 @media screen and (max-width: 700px) {
     
     div.aboutMePfpContainer > img {
-        width: 90px;
+        width: 70px;
     }
     
 }

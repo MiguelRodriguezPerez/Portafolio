@@ -4,7 +4,7 @@ export const AboutMePfp = () => {
   
     return (
         <div className={styles.aboutMePfpContainer}>
-            <img src="quag-modified.png"/>
+            <img src="faviconReal-modified.png"/>
         </div>
     );
 }

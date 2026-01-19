@@ -9,8 +9,8 @@ ul.contact-list-socials {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0px 15px;
-    margin-bottom: 15px;
+    gap: 0px 25px;
+
 }
 
 li.contact-li {
@@ -18,10 +18,7 @@ li.contact-li {
     align-content: end;
     justify-content: center;
 
-    gap: 10px;
-    padding: 10px;
-    padding-left: 0px;
-    padding-bottom: 0px;
+    gap: 15px;
     cursor: pointer;
 }
 
