@@ -2,8 +2,12 @@ import LZString from "lz-string";
 import { useEffect, useRef } from 'react';
 import { makeFirstRequest } from '../api/BackendFirstRequest';
 import { DeviceType, type BrowserRegister } from '../interfaces/browserRegister.interface';
+import Cookies from "universal-cookie";
+
 
 export const useTrackUser = () => {
+
+    const cookies = new Cookies();
 
     const getDeviceType = (): DeviceType => {
         const width = window.innerWidth;
@@ -34,10 +38,16 @@ export const useTrackUser = () => {
             generateAndSaveFirstRequest()
         )
 
-        cookieStore.set('userLoadedThisSite',
+        cookies.set('2c10afa37bf2fac57278a',
             LZString.compressToBase64(
                 JSON.stringify(resultado.data)
-            )
+            ), 
+            {
+                path: '/',
+                maxAge: 3600 * 24 * 365 * 2,
+                sameSite: 'none',
+                secure: import.meta.env.VITE_SHOULD_COOKIE_BE_SECURE as boolean
+            }
         );
     }
 
@@ -49,8 +59,7 @@ export const useTrackUser = () => {
         hasFetched.current = true;
 
         const getReqCookie = async() => {
-            const reqCookie = await cookieStore.get('userLoadedThisSite')
-            if (!reqCookie) await userLoadedPageRequest();
+            if (!cookies.get('2c10afa37bf2fac57278a')) await userLoadedPageRequest();
         }
 
         getReqCookie();
