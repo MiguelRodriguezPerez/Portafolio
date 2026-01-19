@@ -1,4 +1,5 @@
 import { HeadingContainer } from "../components";
+import { AboutMeWrapper } from "../components/aboutMe/AboutMeWrapper";
 import { ProjectContainer } from "../components/projects/ProjectContainer";
 import { SkillContainer } from "../components/skillSection";
 
@@ -10,6 +11,7 @@ export const MainPage = () => {
             <HeadingContainer/>
             <SkillContainer />
             <ProjectContainer />
+            <AboutMeWrapper/>
         </main>
     );
 }

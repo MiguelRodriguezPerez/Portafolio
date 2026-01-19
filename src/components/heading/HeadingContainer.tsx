@@ -1,8 +1,7 @@
-import { ContactList } from './contact';
+import { useTrackUser } from '../../hooks/useTrackUser';
+import styles from '../../styles/heading/heading.module.css';
 import { Titles } from './title';
 
-import styles from '../../styles/heading/heading.module.css';
-import { useTrackUser } from '../../hooks/useTrackUser';
 
 export const HeadingContainer = () => {
 
@@ -11,7 +10,6 @@ export const HeadingContainer = () => {
     return (
         <header className={styles['heading-container']}>
             <Titles />
-            <ContactList />
         </header>
     );
 }

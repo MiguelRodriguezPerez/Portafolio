@@ -5,9 +5,15 @@ export const Titles = () => {
 
     return (
         <>
-            <h1 className={styles['heading-title']}>Miguel Rodríguez</h1>
+            <div className={styles.revealUp}>
+                <h1 className={styles['heading-title']}>Miguel Rodríguez</h1>
+            </div>
+
             <TitleBar/>
-            <h2 className={styles['heading-subtitle']}>Junior Webdev</h2>
+
+            <div className={styles.revealDown}>
+                <h2 className={styles['heading-subtitle']}>Junior Webdev</h2>
+            </div>
         </>
     );
 }
