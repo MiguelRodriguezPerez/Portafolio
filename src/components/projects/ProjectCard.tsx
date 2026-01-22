@@ -3,13 +3,16 @@ import { ProjectStackWrapper } from "./projectStack";
 import { useWindowWidth } from "@react-hook/window-size";
 
 import styles from '../../styles/projectSection/projectStyles.module.css';
+import { useUpdateUserCookie } from "../../hooks/useUpdateUserCookie";
 
 export const ProjectCard = ({ project }: { project: ProjectInterface }) => {
 
     const width = useWindowWidth();
+    const { updateCookie } = useUpdateUserCookie();
 
-    const clickEvent = () => {
+    const clickEvent = async() => {
         window.open(project.prodUrl);
+        updateCookie(project.clickedCallbackEvent);
     }
 
     return (

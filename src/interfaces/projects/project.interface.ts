@@ -1,3 +1,6 @@
+import type { AxiosResponse } from "axios";
+import { userClickedWeavile, userClickedWorkline } from "../../api/UserClickedProjects";
+
 export interface ProjectInterface {
     name: string,
     description: string,
@@ -7,6 +10,7 @@ export interface ProjectInterface {
     stackTags: string[],
     screenshotProjectRoute: string,
     prodUrl: string,
+    clickedCallbackEvent: () => Promise<AxiosResponse<void, any, {}>>
 }
 
 export interface RepoLink {
@@ -20,7 +24,7 @@ export const arrProjects: ProjectInterface[] = [
         description: 'Workline es un portal de empleo donde encontrar nuevas oportunidades laborales, ' +
                      'ya sea encontrando tu trabajo o candidato ideal para tu empresa' +
                      '.',
-        phoneDescription: 'Workline es un portal de empleo para ser contratado y contratar.',
+        phoneDescription: 'Workline es un portal de empleo para ser contratado y contratar personal.',
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/Workline-FrontEnd'
@@ -31,7 +35,8 @@ export const arrProjects: ProjectInterface[] = [
         },
         stackTags: ['Angular', 'Spring-Boot', 'MySql', 'Sass'],
         screenshotProjectRoute: '/images/worklineCaptura.png',
-        prodUrl: 'https://www.worklinejobs.com'
+        prodUrl: 'https://www.worklinejobs.com',
+        clickedCallbackEvent: userClickedWorkline
     },
     {
         name: 'Weavile Team Builder',
@@ -49,6 +54,7 @@ export const arrProjects: ProjectInterface[] = [
         },
         stackTags: ['React', 'Spring-Boot', 'MySql','OpenAPI'],
         screenshotProjectRoute: '/images/weavileCaptura.png',
-        prodUrl: 'https://www.weavileteambuilder.com'
+        prodUrl: 'https://www.weavileteambuilder.com',
+        clickedCallbackEvent: userClickedWeavile
     },
 ];

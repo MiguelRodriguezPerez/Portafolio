@@ -39,7 +39,7 @@ export const useTrackUser = () => {
         )
 
         cookies.set('2c10afa37bf2fac57278a',
-            LZString.compressToBase64(
+            btoa(
                 JSON.stringify(resultado.data)
             ), 
             {
