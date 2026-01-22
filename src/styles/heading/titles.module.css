@@ -1,34 +1,44 @@
 @import './headingAnimations.css';
 
+
 h1.heading-title {
-    margin-top: 8vh;
     text-align: center;
     font-size: 4.8rem;
-    margin-bottom: 10px;
-    animation: fadeUp 1.7s ease-out forwards;
+    animation: pullUpTitle 1.7s ease-out forwards;
+    margin-bottom: 5px;
 }
 
 h2.heading-subtitle {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 80px;
-    animation: fadeUp 1.7s ease-out forwards;
+    animation: pullDownTitle 1.7s ease-out forwards;
+    margin-top: 10px;
 }
 
 div.title-bar-div {
-    width: 80%;
-    margin: 0 auto;
+    width: 84%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 10px;
+    background-color: #292940;
+    z-index: 0;
+    
 }
 
-.title-bar {
+div.title-bar-div > hr.title-bar {
     width: 100%;
     margin-top: 20px;
     margin-bottom: -25px;
     animation: wideUp 1.7s ease-out forwards;
+    z-index: 20;
+    overflow: hidden;
+    transform-origin: center;
+}
+
+div.title-bar-div > svg {
+    z-index: 20;
+    margin: 0 auto;
 }
 
 
@@ -54,7 +64,6 @@ div.title-bar-div {
     
     h1.heading-title {
         font-size: 2.5rem;
-        margin-top: 40px;
     }
 
     h2.heading-subtitle {

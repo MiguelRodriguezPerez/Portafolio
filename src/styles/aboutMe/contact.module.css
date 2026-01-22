@@ -1,9 +1,16 @@
+div.contact-list-container {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+
 ul.contact-list-socials {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0px 15px;
-    margin-bottom: 15px;
+    gap: 0px 25px;
+
 }
 
 li.contact-li {
@@ -11,10 +18,7 @@ li.contact-li {
     align-content: end;
     justify-content: center;
 
-    gap: 10px;
-    padding: 10px;
-    padding-left: 0px;
-    padding-bottom: 0px;
+    gap: 15px;
     cursor: pointer;
 }
 
@@ -22,6 +26,10 @@ li.contact-li > span {
     height: fit-content;
     margin: auto 0;
     font-size: 1.2rem;
+}
+
+div.cv-button-container {
+    margin-left: auto;
 }
 
 
@@ -44,24 +52,42 @@ a.cv-button {
 
     a.cv-button {
         padding: 8px 18px;
+        margin-left: auto;
     }
 
     .contact-li > span {
         padding-left: 0px;
     }
-
     
 }
 
 @media screen and (max-width: 700px) {
 
-    a.cv-button {
-        padding: 8px 18px;
-        margin-top: 20px;
-        margin-left: auto;
+    ul.contact-list-socials {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
     }
 
-    .contact-li,  .contact-li:first-child {
-        padding-left: 2px;
+    li.contact-li {
+        justify-content: start;
+        align-content: start;
     }
+
+    a.cv-button {
+        padding: 8px 18px;
+        margin-top: 10px;
+    }
+
+    div.contact-list-container {
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    div.cv-button-container {
+        margin-left: 0px;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+
 }
