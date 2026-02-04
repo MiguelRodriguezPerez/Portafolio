@@ -24,7 +24,7 @@ export const arrProjects: ProjectInterface[] = [
         description: 'Workline es un portal de empleo donde encontrar nuevas oportunidades laborales, ' +
                      'ya sea encontrando tu trabajo o candidato ideal para tu empresa' +
                      '.',
-        phoneDescription: 'Workline es un portal de empleo para ser contratado y contratar.',
+        phoneDescription: 'Workline es un portal de empleo para ser contratado y contratar personal.',
         frontendRepo: {
             name: 'Front-End',
             link: 'https://github.com/MiguelRodriguezPerez/Workline-FrontEnd'
