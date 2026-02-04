@@ -1,3 +1,6 @@
+@import '../../styles/shared/globalVariables/portfolioColors.css';
+@import '../../styles/projectSection/projectColors.css';
+
 .project-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -15,11 +18,11 @@ ul.project-list {
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 8px;
-    background-color: #49465b;
+    background-color: var(--background-project-card-color);
     overflow: hidden;
     gap: 0px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .project-card img {
@@ -44,7 +47,8 @@ ul.project-list {
 }
 
 .project-card:hover {
-    background-color: #57536e;
+    --background-project-card-color:#57536e;
+    background-color: var(--background-project-card-color);
     transform: scale(1.04);
 }
 
@@ -67,7 +71,7 @@ ul.project-list {
 
 .project-stack-tag {
     background-color: transparent;
-    border: solid 1px white;
+    border: solid 1px var(--default-color);
     border-radius: 30px;
     padding: 10px;
     font-size: 0.9rem;
@@ -93,7 +97,7 @@ ul.project-list {
     border-radius: 30px;
     
     height: fit-content;
-    border-color: #34aeeb;
+    border-color: var(--highlight-blue);
     -webkit-box-shadow: 0px 0px 7px 1px rgba(52,174,235,0.25); 
     box-shadow: 0px 0px 7px 1px rgba(52,174,235,0.25);
     cursor: pointer;

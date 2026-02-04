@@ -1,6 +1,7 @@
+@import '../../styles/shared/animations/slideUpHover.css';
+
 div.contact-list-container {
     margin-top: 15px;
-
     display: flex;
     flex-direction: row;
 }
@@ -20,12 +21,22 @@ li.contact-li {
 
     gap: 15px;
     cursor: pointer;
+    animation: selectedSlideDown 0.3s ease forwards;
+
+    &:hover {
+        animation: selectedSlideUp 0.3s ease forwards alternate !important; 
+    }
 }
 
 li.contact-li > span {
     height: fit-content;
     margin: auto 0;
     font-size: 1.2rem;
+}
+
+li.contact-li:hover svg,
+li.contact-li:hover > span {
+    animation: colorSelectedSlideUp 0.3s ease forwards;
 }
 
 div.cv-button-container {
@@ -46,13 +57,25 @@ a.cv-button {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        animation: colorSelectedSlideUp 0.3s ease forwards;
+    }
 }
+
+
 
 @media screen and (max-width: 1400px) {
 
     a.cv-button {
         padding: 8px 18px;
         margin-left: auto;
+    }
+
+    li.contact-li:hover svg,
+    li.contact-li:hover > span {
+        animation: none;
     }
 
     .contact-li > span {

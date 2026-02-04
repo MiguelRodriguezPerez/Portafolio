@@ -1,0 +1,35 @@
+@import '../globalVariables/portfolioColors.css';
+
+
+@keyframes selectedSlideUp {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes colorSelectedSlideUp {
+    from {
+        color: var(--default-color);
+        fill: var(--default-color);
+    }
+
+    to {
+        color: var(--highlight-blue);
+        fill: var(--highlight-blue);
+    }
+}
+
+
+@keyframes selectedSlideDown {
+    from {
+        transform: translateY(-7px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
