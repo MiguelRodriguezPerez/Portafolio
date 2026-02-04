@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Lato-Regular";
+  font-display: block;
+  src: url('../../../fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+
+:root {
+    --default-font: "Lato-Regular";
+    --default-font-size: 20px;
+}

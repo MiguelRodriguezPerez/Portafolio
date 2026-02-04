@@ -1,0 +1,6 @@
+h1, h2, h3 ,p, ul, li, body {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  font-weight: normal;
+}

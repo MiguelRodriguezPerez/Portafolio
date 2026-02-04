@@ -1,5 +1,8 @@
+@import '../../styles/shared/animations/slideUpHover.css';
+
 .svg-container {
   display: flex;
   align-items: center;
   height: 100%;
 }
+
