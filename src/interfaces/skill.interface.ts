@@ -3,6 +3,8 @@ import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { FaCss3, FaDocker, FaGitAlt, FaHtml5, FaJava, FaReact, FaAngular } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiSpring, SiOpenapiinitiative  } from "react-icons/si";
+import { SiJsonwebtokens } from "react-icons/si";
+
 
 export interface SkillInterface {
     name: string,
@@ -53,6 +55,10 @@ export const backendSkills: SkillInterface[] = [
     {
         name: 'OpenAPI',
         icon: SiOpenapiinitiative
+    },
+    {
+        name: 'JWT',
+        icon: SiJsonwebtokens
     }
 ]
 
