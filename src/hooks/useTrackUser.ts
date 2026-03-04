@@ -1,8 +1,7 @@
-import LZString from "lz-string";
 import { useEffect, useRef } from 'react';
+import Cookies from "universal-cookie";
 import { makeFirstRequest } from '../api/BackendFirstRequest';
 import { DeviceType, type BrowserRegister } from '../interfaces/browserRegister.interface';
-import Cookies from "universal-cookie";
 
 
 export const useTrackUser = () => {
